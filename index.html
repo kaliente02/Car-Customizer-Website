@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Customizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Car Customizer</h1>
+  <div class="customizer">
+    <!-- Options -->
+    <div class="options">
+      <label for="brand">Select Brand:</label>
+      <select id="brand">
+        <option value="toyota">Toyota</option>
+        <option value="tesla">Tesla</option>
+        <option value="bmw">BMW</option>
+      </select>
+
+      <label for="version">Select Version:</label>
+      <select id="version">
+        <option value="standard">Standard</option>
+        <option value="sport">Sport</option>
+        <option value="luxury">Luxury</option>
+      </select>
+
+      <label for="color">Select Color:</label>
+      <input type="color" id="color" value="#ff0000">
+
+      <label for="style">Select Style:</label>
+      <select id="style">
+        <option value="classic">Classic</option>
+        <option value="modern">Modern</option>
+        <option value="futuristic">Futuristic</option>
+      </select>
+    </div>
+
+    <!-- Preview -->
+    <div class="preview">
+      <div id="carContainer">
+        <img id="carImage" src="images/car-toyota.svg" alt="Car Preview">
+      </div>
+      <img src="images/logo-toyota.png" alt="Brand Logo" class="logo" id="brandLogo">
+      <p id="details"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
